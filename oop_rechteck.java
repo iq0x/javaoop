@@ -1,4 +1,3 @@
-
 public class Rechteck 
 {
     int seitenlaengeA;
@@ -15,8 +14,6 @@ public class Rechteck
     }
 
 
-    private static int umfang;
-
     public static void main(String[] args) 
     {
         Rechteck r = new Rechteck();
@@ -28,11 +25,7 @@ public class Rechteck
         int umfang = r.umfang();
         int flaeche = r.flaeche();
 
-        System.out.println(Umfangumfang);
+        System.out.println(umfang);
         System.out.println(flaeche);
     }
 }
-
-
-
-
