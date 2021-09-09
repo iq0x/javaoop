@@ -1,9 +1,9 @@
-public class Lieferdienst 
+public class paket 
 {
     double gewicht;
     double preis;
 
-    double kosten(double gewicht) 
+    double check(double gewicht) 
     {
 		if (gewicht > 20)
         {
@@ -31,12 +31,12 @@ public class Lieferdienst
 
 
     public static void main(String[] args) 
-    {
-        Lieferdienst paket = new Lieferdienst();
+    {a
+        paket paket = new paket();
 
         paket.gewicht = 20;
        
-        double kosten = paket.kosten(paket.gewicht);
+        double kosten = paket.check(paket.gewicht);
 
         display(kosten);
 
