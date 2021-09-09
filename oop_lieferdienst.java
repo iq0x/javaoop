@@ -31,7 +31,7 @@ public class paket
 
 
     public static void main(String[] args) 
-    {a
+    {
         paket paket = new paket();
 
         paket.gewicht = 20;
