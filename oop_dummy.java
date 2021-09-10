@@ -7,7 +7,7 @@ public class dummy
     { 
 		return x;
     }
-   
+//---------------------------------------------------------------------
     public static void main(String[] args)
     {
 	    dummy dummy = new dummy();
@@ -21,7 +21,7 @@ public class dummy
 		System.out.print("\niam a dummy, my name is " + dummy.name+ "\n");
 		System.out.print("my price is " + price(dummy.price) + " $\n");
     }
-    
+//---------------------------------------------------------------------
     public static void titel()
     {
 		System.out.println("█████████████████████████████████████");
