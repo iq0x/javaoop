@@ -4,7 +4,7 @@ class Main {
     public static void main(String args[])
     {
   
-        bot[] army = new bot[100];
+        bot[] army = new bot[2];
   
         army[0] = new bot();
         army[1] = new bot();
@@ -12,14 +12,30 @@ class Main {
         army[0].setData(4123, "helmut");
         army[1].setData(4322, "uwe");
   
-        army[0].display();
-        army[1].display();
+  
+		for(bot value: army)
+		{
+			System.out.println(value);		
+		}
+		
+		
+		int count = 0;
+		
+		while (count < army.length)
+		{
+			army[count].getData();			
+			count++;
+		}
+		System.out.println();
+		
+        army[0].getData();
+        army[1].getData();
     }
 }
   
 
-class bot {
-  
+class bot 
+{  
     public int id;
     public String name;
   
@@ -30,8 +46,8 @@ class bot {
         this.name = name;
     }
   
-    public void display()
+    public void getData()
     {
-        System.out.println("bot id: " + id + "\tbot name: " + name);
+        System.out.println("ID: " + id + "\tname: " + name);
     }
 }
