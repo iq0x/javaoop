@@ -1,8 +1,11 @@
 public class mietwagen 
 {
     private String marke;
-    private String category;
+
+    private double gewicht;
     private double price;
+    private double rentprice;
+    private String category;
 
 
 	public void setcategory(String name)
@@ -20,11 +23,14 @@ public class mietwagen
 		this.price = price;
     }
     
-    
-    public String getcategory(String name)
+    public void setgewicht(double gewicht)
     { 
-		return this.category;
+		this.gewicht = gewicht;
     }
+    
+       
+    
+    
     
     public String getname(String name)
     { 
@@ -36,24 +42,35 @@ public class mietwagen
 		return this.price;
     }
     
+    public double getgewicht(double price)
+    { 
+		return this.gewicht;
+    }
+    
+    public String getcategory(String category, double gewicht)
+    { 
+		return category;
+    }
+    
 //---------------------------------------------------------------------
 
     public static void main(String[] args)
     {
-		
 	    mietwagen mietwagen = new mietwagen();
 		
 	    mietwagen.marke = "audi";
-	    mietwagen.price = 1234.00;
+	    mietwagen.price = 9999.00;
+		mietwagen.gewicht = 1234.00;
 	    
+	    mietwagen.category = "kleinwagen";
 	    
 		clrscr();
 		titel();
 		
 		System.out.print(mietwagen.getname(mietwagen.marke) + "\n");
 		System.out.print(mietwagen.getprice(mietwagen.price) + "\n");
-		System.out.print(mietwagen.getcategory(mietwagen.category) + "\n");
-		
+		System.out.print(mietwagen.getgewicht(mietwagen.gewicht) + "\n");
+		System.out.print(mietwagen.getcategory(mietwagen.category, mietwagen.gewicht) + "\n");
 
     }
     
