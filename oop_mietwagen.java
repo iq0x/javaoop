@@ -1,44 +1,19 @@
-public class mietwagen 
+public class Mietwagen 
 {
-    private String marke;
     private double gewicht;
     private double price;
-    private double rentprice;
     private String category;
-
 
 	public void setcategory(String category)
     { 
 		this.category = category;
     }
-    
-    public void setname(String name)
-    { 
-		this.marke = marke;
-    }
-    
-    public void setprice(double price)
-    { 
-		this.price = price;
-    }
-    
+   
     public void setgewicht(double gewicht)
     { 
 		this.gewicht = gewicht;
     }
     
-       
- 
-    
-    public String getname(String name)
-    { 
-		return this.marke;
-    }
-    
-    public double getprice(double price)
-    { 
-		return this.price;
-    }
     
     public double getgewicht(double price)
     { 
@@ -82,29 +57,20 @@ public class mietwagen
 
     public static void main(String[] args)
     {
-	    mietwagen mietwagen = new mietwagen();
-		
-	    mietwagen.marke = "audi";
-	    mietwagen.price = 9999.00;
-		mietwagen.gewicht = 700.00;
-	    
-	    mietwagen.category = "kleinwagen";
-	    
-	    int miettage = 3;
-	    int km = 200;
-	    
 		clrscr();
 		titel();
-		
-		System.out.print("auto marke:\t\t" + mietwagen.getname(mietwagen.marke) + "\n");
-		System.out.print("auto preis:\t\t" + mietwagen.getprice(mietwagen.price) + "\n");
-		System.out.print("auto gewicht:\t\t" + mietwagen.getgewicht(mietwagen.gewicht) + "\n");
-		System.out.print("auto kategorie:\t\t" + mietwagen.getcategory(mietwagen.category, mietwagen.gewicht) + "\n\n");
-		
-		System.out.println("usereingabe");
+		int miettage = 1;
+	    int km = 201;
+	    
+	    Mietwagen mietwagen = new Mietwagen();
+	    
+	    mietwagen.setcategory("");
+	    mietwagen.setgewicht(1000);
+	    
 		System.out.println(miettage +" Tage");
 		System.out.println(km +" km");
-		System.out.print(kosten(mietwagen.category, miettage, km) + "\n");
+		System.out.print("auto kategorie:\t" + mietwagen.getcategory(mietwagen.category, mietwagen.gewicht) + "\n\n");
+		System.out.print("Die kosten betragen: " + kosten(mietwagen.category, miettage, km) + "\n");
     }
     
 //---------------------------------------------------------------------
