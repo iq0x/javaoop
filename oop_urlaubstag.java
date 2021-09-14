@@ -22,15 +22,15 @@ class Main
 			i++;
 		}
        
-		u[0].setData("523451", "Helmut", "Srgiano", "01.05.1945", 30, utage);
-		u[1].setData("756543", "Jan", "Deluxe", "05.03.1975", 30, utage);
-		u[2].setData("123456", "Uwe", "Knecht", "03.09.1999", 30, utage);
-		u[3].setData("423111", "Oliver", "Hammer", "07.11.1990", 30, utage);
-		u[4].setData("987211", "Dieter", "derbear", "01.02.1888", 30, utage);
+		u[0].setData("ABC523451", "Helmut", "Srgiano", "01.05.1945", 30, utage);
+		u[1].setData("ABC756543", "Jan", "Deluxe", "05.03.1975", 30, utage);
+		u[2].setData("ABC123456", "Uwe", "Knecht", "03.09.1999", 30, utage);
+		u[3].setData("ABC423111", "Oliver", "Hammer", "07.11.1990", 30, utage);
+		u[4].setData("ABC987211", "Dieter", "derbear", "01.02.1888", 30, utage);
 		
 		while (j < u.length)
 		{
-			u[j].getData(rand.nextInt(10));	
+			u[j].getData(rand.nextInt(30));	
 			j++;
 		}
     }
@@ -66,6 +66,7 @@ class Urlaubstage
 		if(check = Pattern.matches("[a-zA-Z]*", nachname))	
 			this.nachname = nachname;
 			
+
 
 		this.geb = geb;
 			
