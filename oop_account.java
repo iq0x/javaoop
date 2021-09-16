@@ -10,22 +10,22 @@ class Privatkunde
         Lieferanschrift KundeAnschrift 		= new Lieferanschrift("lolstr.3", 28222, "Bremen");
         Bankverbindung KundeBankverbindung 	= new Bankverbindung(1000.0 ,8318293, 313423);
              
-        Shop sexshop 						= new Shop(10, 21);
+        Shop fischladen 						= new Shop(10, 21);
         Artikel [] NeuerArtikel 			= new Artikel[6];
         
 
-        NeuerArtikel[0] = new Artikel(1,"Superdildo", 19.99, 6);
-        NeuerArtikel[1] = new Artikel(2,"Megadildo", 29.99, 4);
-        NeuerArtikel[2] = new Artikel(3,"Ultradildo", 39.99, 4);
-        NeuerArtikel[3] = new Artikel(4,"Gigadildo", 49.99, 3);
-        NeuerArtikel[4] = new Artikel(5,"TetaDildo", 59.99, 1);
-        NeuerArtikel[5] = new Artikel(6,"SupraDildo", 69.99, 2);
+        NeuerArtikel[0] = new Artikel(1,"forelle", 19.99, 6);
+        NeuerArtikel[1] = new Artikel(2,"karpfen", 29.99, 4);
+        NeuerArtikel[2] = new Artikel(3,"scholle", 39.99, 4);
+        NeuerArtikel[3] = new Artikel(4,"aal", 49.99, 3);
+        NeuerArtikel[4] = new Artikel(5,"thun", 59.99, 1);
+        NeuerArtikel[5] = new Artikel(6,"krabe", 69.99, 2);
         
         clrscr();
         
         
         System.out.println("Herzlich Wilkommen "+ Kunde1.getVorname() + " " + KundeBankverbindung.getPersonendaten());
-        System.out.println("Unser Shop ist heute offen von "+ sexshop.getOeffnungszeitenVON() + " bis um " + sexshop.getOeffnungszeitenBIS());
+        System.out.println("Unser Shop ist heute offen von "+ fischladen.getOeffnungszeitenVON() + " bis um " + fischladen.getOeffnungszeitenBIS());
         
        
         System.out.println("Unser Angebot heute:");
