@@ -19,11 +19,13 @@ public class ActionFigur
 		ActionFigur support = new ActionFigur("soeren", "gumba", 2, 4);
 		ActionFigur boss = new ActionFigur("mike", "titan", 9, 12);
 		
-		String winner;
+		ActionFigur winner;
 		
-		winner = (fighter.attack + support.attack > boss.defense) ? fighter.name : boss.name;
+		winner = (fighter.attack < heilerin.defense) ? fighter : heilerin;
+		winner = (heilerin.attack > support.defense) ? heilerin : support;
+		winner = (fighter.attack + support.attack > boss.defense) ? fighter : boss;
 		
-		return winner;
+		return winner.name;
 	}
 
 
