@@ -6,7 +6,7 @@ public class Main
      public static void main(String args[])
      {
 		   ArrayList<Container> container = new ArrayList<Container>();
-		   ArrayList<Wagoon> wagoon = new ArrayList<Wagoon>();   
+		    
 		   
 		   container.add(new Container(40));
 		   container.add(new Container(20));
@@ -22,14 +22,14 @@ public class Main
 		   
 		   
 		   
-		  System.out.println("\nder zug hat:" + sortieren(wagoon, container) + " Wagoons");    
+		  System.out.println("\nder zug hat:" + sortieren(container) + " Wagoons");    
      }
      
-     public static int sortieren(ArrayList<Wagoon> wagoon, ArrayList<Container> container)
+     public static int sortieren(ArrayList<Container> container)
      {
 		 
 		 
-		 
+		 ArrayList<Wagoon> wagoon = new AarrayList<Wagoon>();  
 		  int a = 0;
 		   int b = 0;
 		   
