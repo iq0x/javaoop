@@ -20,8 +20,17 @@ public class Main
 		   container.add(new Container(20));
 		   container.add(new Container(20));
 		   
-  
-		   int a = 0;
+		   
+		   
+		  System.out.println("\nder zug hat:" + sortieren(wagoon, container) + " Wagoons");    
+     }
+     
+     public static int sortieren(ArrayList<Wagoon> wagoon, ArrayList<Container> container)
+     {
+		 
+		 
+		 
+		  int a = 0;
 		   int b = 0;
 		   
 		   for(Container lol: container)
@@ -45,10 +54,11 @@ public class Main
 		   if(a % 2 != 0)
 				wagoon.add(new Wagoon(1));
 				
-				
-		   System.out.println("\nder zug hat:" + wagoon.size() + " Wagoons"); 
-		  
-     }
+			
+		   
+		 
+		 return wagoon.size();
+	 }
 }
 
 
